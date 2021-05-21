@@ -1,0 +1,16 @@
+{
+    "enabled": 1,
+    "hidden": false,
+    "description": "Jobsets",
+    "nixexprinput": "jobsets",
+    "nixexprpath": "jobsets-qchem.nix",
+    "checkinterval": 300,
+    "schedulingshares": 100,
+    "enableemail": false,
+    "emailoverride": "",
+    "keepnr": 1,
+    "inputs": {
+        "jobsets": { "type": "git", "value": "git://github.com/markuskowa/hydra-conf.git", "emailresponsible": false },
+        "nixpkgs": { "type": "git", "value": "git://github.com/NixOS/nixpkgs.git nixos-20.09", "emailresponsible": false }
+    }
+}
