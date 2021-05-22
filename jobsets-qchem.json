@@ -38,6 +38,40 @@
     "nixexprpath": "release.nix",
     "schedulingshares": 100
   },
+  "master-staging": {
+    "checkinterval": 0,
+    "description": "Build master against nixpkgs staging",
+    "emailoverride": "",
+    "enabled": true,
+    "enableemail": false,
+    "hidden": false,
+    "inputs": {
+      "config": {
+        "emailresponsible": false,
+        "type": "nix",
+        "value": "{ optAVX = true; }"
+      },
+      "allowUnfree": {
+        "emailresponsible": false,
+        "type": "boolean",
+        "value": "false"
+      },
+      "nixpkgs": {
+        "emailresponsible": false,
+        "type": "git",
+        "value": "git://github.com/NixOS/nixpkgs.git staging"
+      },
+      "qchem": {
+        "emailresponsible": false,
+        "type": "git",
+        "value": "git://github.com/markuskowa/NixOS-QChem.git master"
+      }
+    },
+    "keepnr": 1,
+    "nixexprinput": "qchem",
+    "nixexprpath": "release.nix",
+    "schedulingshares": 100
+  },
   "master-unstable-noavx": {
     "checkinterval": 172800,
     "description": "Build master against nixpkgs-unstable (AVX optimizations disabled)",
