@@ -40,7 +40,7 @@
   },
   "master-staging": {
     "checkinterval": 0,
-    "description": "Build master against nixpkgs staging",
+    "description": "Build openblas/branch against nixpkgs staging",
     "emailoverride": "",
     "enabled": true,
     "enableemail": false,
@@ -64,7 +64,7 @@
       "qchem": {
         "emailresponsible": false,
         "type": "git",
-        "value": "git://github.com/markuskowa/NixOS-QChem.git master"
+        "value": "git://github.com/markuskowa/NixOS-QChem.git openblas"
       }
     },
     "keepnr": 1,
