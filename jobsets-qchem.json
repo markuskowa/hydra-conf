@@ -135,7 +135,7 @@
         "value": "git://github.com/markuskowa/NixOS-QChem.git release-20.09"
       }
     },
-    "keepnr": 1,
+    "keepnr": 0,
     "nixexprinput": "qchem",
     "nixexprpath": "release.nix",
     "schedulingshares": 100
