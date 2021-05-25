@@ -1,38 +1,4 @@
 {
-  "master-unstable-avx512": {
-    "checkinterval": 86400,
-    "description": "Build master against nixpkgs-unstable",
-    "emailoverride": "",
-    "enabled": true,
-    "enableemail": false,
-    "hidden": false,
-    "inputs": {
-      "config": {
-        "emailresponsible": false,
-        "type": "nix",
-        "value": "{ optAVX = true; }"
-      },
-      "allowUnfree": {
-        "emailresponsible": false,
-        "type": "boolean",
-        "value": "false"
-      },
-      "nixpkgs": {
-        "emailresponsible": false,
-        "type": "git",
-        "value": "git://github.com/NixOS/nixpkgs.git nixpkgs-unstable"
-      },
-      "qchem": {
-        "emailresponsible": false,
-        "type": "git",
-        "value": "git://github.com/markuskowa/NixOS-QChem.git master"
-      }
-    },
-    "keepnr": 5,
-    "nixexprinput": "qchem",
-    "nixexprpath": "release.nix",
-    "schedulingshares": 100
-  },
   "master-unstable": {
     "checkinterval": 86400,
     "description": "Build master against nixpkgs-unstable",
@@ -50,11 +16,6 @@
         "emailresponsible": false,
         "type": "boolean",
         "value": "false"
-      },
-      "preOverlays": {
-        "emailresponsible": false,
-        "type": "nix",
-        "value": "[(self: super: { openblas = super.openblas.overrideAttrs (x: { makeFlags = x.makeFlags ++ [ \"NO_AVX512=1\" ]; }); })]"
       },
       "nixpkgs": {
         "emailresponsible": false,
