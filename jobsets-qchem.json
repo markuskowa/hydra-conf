@@ -1,6 +1,6 @@
 {
   "master-unstable": {
-    "checkinterval": 86400,
+    "checkinterval": 43200,
     "description": "Build master against nixpkgs-unstable",
     "emailoverride": "",
     "enabled": true,
@@ -68,7 +68,7 @@
     "schedulingshares": 100
   },
   "release-21.05": {
-    "checkinterval": 86400,
+    "checkinterval": 43200,
     "description": "Build release 21.05",
     "emailoverride": "",
     "enabled": true,
