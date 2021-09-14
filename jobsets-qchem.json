@@ -17,6 +17,10 @@
         "type": "boolean",
         "value": "false"
       },
+      "postOverlays": {
+	"type": "nix",
+	"value": "[(self: super: { qchem=super.qchem // { amd-scalapack = null; }; })]"
+      },
       "nixpkgs": {
         "emailresponsible": false,
         "type": "git",
@@ -45,6 +49,10 @@
         "emailresponsible": false,
         "type": "nix",
         "value": "{ optAVX = false; }"
+      },
+      "postOverlays": {
+	"type": "nix",
+	"value": "[(self: super: { qchem=super.qchem // { amd-scalapack = null; }; })]"
       },
       "allowUnfree": {
         "emailresponsible": false,
