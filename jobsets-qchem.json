@@ -17,6 +17,11 @@
         "type": "boolean",
         "value": "false"
       },
+      "pin": {
+        "emailresponsible": false,
+        "type": "boolean",
+        "value": "true"
+      },
       "postOverlays": {
 	"type": "nix",
 	"value": "[(self: super: { qchem=super.qchem // { amd-scalapack = null; }; })]"
@@ -58,6 +63,11 @@
         "emailresponsible": false,
         "type": "boolean",
         "value": "false"
+      },
+      "pin": {
+        "emailresponsible": false,
+        "type": "boolean",
+        "value": "true"
       },
       "nixpkgs": {
         "emailresponsible": false,

@@ -52,6 +52,12 @@ let
         emailresponsible = false;
       };
 
+      pin = {
+        type = "boolean";
+        value = "true";
+        emailresponsible = false;
+      };
+
       config = {
         type = "nix";
         value = ''
