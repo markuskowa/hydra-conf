@@ -166,6 +166,11 @@
         "value": "git://github.com/markuskowa/NixOS-QChem.git release-21.11"
       }
     },
+    "keepnr": 5,
+    "nixexprinput": "qchem",
+    "nixexprpath": "release.nix",
+    "schedulingshares": 100
+  },
   "release-21.05": {
     "checkinterval": 43200,
     "description": "Build release 21.05",
