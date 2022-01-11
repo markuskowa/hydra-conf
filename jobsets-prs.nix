@@ -36,13 +36,13 @@ let
     inputs = {
       qchem = {
         type = "git";
-        value  = "git://github.com/markuskowa/NixOS-QChem.git pull/${prNumber}/${ref}";
+        value  = "https://github.com/markuskowa/NixOS-QChem pull/${prNumber}/${ref}";
         emailresponsible = false;
       };
 
       nixpkgs = {
         type = "git";
-        value = "git://github.com/NixOS/nixpkgs.git nixpkgs-unstable";
+        value = "https://github.com/NixOS/nixpkgs nixpkgs-unstable";
         emailresponsible = false;
       };
 

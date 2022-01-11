@@ -29,12 +29,12 @@
       "nixpkgs": {
         "emailresponsible": false,
         "type": "git",
-        "value": "git://github.com/NixOS/nixpkgs.git nixpkgs-unstable"
+        "value": "https://github.com/NixOS/nixpkgs nixpkgs-unstable"
       },
       "qchem": {
         "emailresponsible": false,
         "type": "git",
-        "value": "git://github.com/markuskowa/NixOS-QChem.git master"
+        "value": "https://github.com/markuskowa/NixOS-QChem master"
       }
     },
     "keepnr": 5,
@@ -72,12 +72,12 @@
       "nixpkgs": {
         "emailresponsible": false,
         "type": "git",
-        "value": "git://github.com/NixOS/nixpkgs.git nixpkgs-unstable"
+        "value": "https://github.com/NixOS/nixpkgs nixpkgs-unstable"
       },
       "qchem": {
         "emailresponsible": false,
         "type": "git",
-        "value": "git://github.com/markuskowa/NixOS-QChem.git master"
+        "value": "https://github.com/markuskowa/NixOS-QChem master"
       }
     },
     "keepnr": 5,
@@ -115,12 +115,12 @@
       "nixpkgs": {
         "emailresponsible": false,
         "type": "git",
-        "value": "git://github.com/NixOS/nixpkgs.git nixos-21.11"
+        "value": "https://github.com/NixOS/nixpkgs nixos-21.11"
       },
       "qchem": {
         "emailresponsible": false,
         "type": "git",
-        "value": "git://github.com/markuskowa/NixOS-QChem.git release-21.11"
+        "value": "https://github.com/markuskowa/NixOS-QChem release-21.11"
       }
     },
     "keepnr": 5,
@@ -158,12 +158,12 @@
       "nixpkgs": {
         "emailresponsible": false,
         "type": "git",
-        "value": "git://github.com/NixOS/nixpkgs.git nixos-21.11"
+        "value": "https://github.com/NixOS/nixpkgs nixos-21.11"
       },
       "qchem": {
         "emailresponsible": false,
         "type": "git",
-        "value": "git://github.com/markuskowa/NixOS-QChem.git release-21.11"
+        "value": "https://github.com/markuskowa/NixOS-QChem release-21.11"
       }
     },
     "keepnr": 5,

@@ -11,7 +11,7 @@
     "keepnr": 1,
     "inputs": {
         "pullrequests": { "type": "githubpulls", "value": "markuskowa NixOS-QChem", "emailresponsible": false },
-        "jobsets": { "type": "git", "value": "git://github.com/markuskowa/hydra-conf.git", "emailresponsible": false },
-        "nixpkgs": { "type": "git", "value": "git://github.com/NixOS/nixpkgs.git nixos-20.09", "emailresponsible": false }
+        "jobsets": { "type": "git", "value": "https://github.com/markuskowa/hydra-conf", "emailresponsible": false },
+        "nixpkgs": { "type": "git", "value": "https://github.com/NixOS/nixpkgs nixos-20.09", "emailresponsible": false }
     }
 }
