@@ -22,7 +22,7 @@ let
 
   # Create a single jobset for a PR
   # Allow building of all free packages
-  createJobset = prNumber: spec: ref: {
+  createJobset = prNumber: spec: ref: pin: {
     enabled = true;
     hidden = false;
     description = spec.title;
@@ -54,7 +54,7 @@ let
 
       pin = {
         type = "boolean";
-        value = "true";
+        value = pin;
         emailresponsible = false;
       };
 
@@ -71,8 +71,9 @@ let
   };
 
   # Build the PR and the respective merge commit
-  jobsetsHead = with lib; mapAttrs' (n: v: nameValuePair ( "PR-head-${n}" ) (createJobset n v "head")) validPrs;
-  jobsetsMerge = with lib; mapAttrs' (n: v: nameValuePair ( "PR-merge-${n}" ) (createJobset n v "merge")) validPrs;
+  jobsetsNoPin = with lib; mapAttrs' (n: v: nameValuePair ( "PR-head-nopin-${n}" ) (createJobset n v "head" "false")) validPrs;
+  jobsetsHead = with lib; mapAttrs' (n: v: nameValuePair ( "PR-head-${n}" ) (createJobset n v "head" "true")) validPrs;
+  jobsetsMerge = with lib; mapAttrs' (n: v: nameValuePair ( "PR-merge-${n}" ) (createJobset n v "merge" "true")) validPrs;
 
 in {
   jobsets = pkgs.writeText "jobsets.json" (builtins.toJSON (jobsetsHead // jobsetsMerge ));
