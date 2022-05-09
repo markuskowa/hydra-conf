@@ -76,6 +76,6 @@ let
   jobsetsMerge = with lib; mapAttrs' (n: v: nameValuePair ( "PR-merge-${n}" ) (createJobset n v "merge" "true")) validPrs;
 
 in {
-  jobsets = pkgs.writeText "jobsets.json" (builtins.toJSON (jobsetsHead // jobsetsMerge ));
+  jobsets = pkgs.writeText "jobsets.json" (builtins.toJSON (jobsetsHead // jobsetsNoPin // jobsetsMerge ));
 }
 
