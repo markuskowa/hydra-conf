@@ -85,9 +85,9 @@
     "nixexprpath": "release.nix",
     "schedulingshares": 100
   },
-  "release-21.11": {
+  "release-22.05": {
     "checkinterval": 43200,
-    "description": "Build master against nixpkgs-unstable",
+    "description": "Build release-22.05",
     "emailoverride": "",
     "enabled": true,
     "enableemail": false,
@@ -115,22 +115,22 @@
       "nixpkgs": {
         "emailresponsible": false,
         "type": "git",
-        "value": "https://github.com/NixOS/nixpkgs nixos-21.11"
+        "value": "https://github.com/NixOS/nixpkgs nixos-22.05"
       },
       "qchem": {
         "emailresponsible": false,
         "type": "git",
-        "value": "https://github.com/markuskowa/NixOS-QChem release-21.11"
+        "value": "https://github.com/markuskowa/NixOS-QChem release-22.05"
       }
     },
-    "keepnr": 1,
+    "keepnr": 2,
     "nixexprinput": "qchem",
     "nixexprpath": "release.nix",
     "schedulingshares": 100
   },
-  "release-21.11-noavx": {
+  "release-22.05-noavx": {
     "checkinterval": 172800,
-    "description": "Build master against release-21.11 (AVX optimizations disabled)",
+    "description": "Build release-22.05 (AVX optimizations disabled)",
     "emailoverride": "",
     "enabled": true,
     "enableemail": false,
@@ -158,15 +158,15 @@
       "nixpkgs": {
         "emailresponsible": false,
         "type": "git",
-        "value": "https://github.com/NixOS/nixpkgs nixos-21.11"
+        "value": "https://github.com/NixOS/nixpkgs nixos-22.05"
       },
       "qchem": {
         "emailresponsible": false,
         "type": "git",
-        "value": "https://github.com/markuskowa/NixOS-QChem release-21.11"
+        "value": "https://github.com/markuskowa/NixOS-QChem release-22.05"
       }
     },
-    "keepnr": 1,
+    "keepnr": 2,
     "nixexprinput": "qchem",
     "nixexprpath": "release.nix",
     "schedulingshares": 100
