@@ -123,7 +123,7 @@
         "value": "https://github.com/markuskowa/NixOS-QChem release-21.11"
       }
     },
-    "keepnr": 5,
+    "keepnr": 1,
     "nixexprinput": "qchem",
     "nixexprpath": "release.nix",
     "schedulingshares": 100
@@ -166,7 +166,7 @@
         "value": "https://github.com/markuskowa/NixOS-QChem release-21.11"
       }
     },
-    "keepnr": 5,
+    "keepnr": 1,
     "nixexprinput": "qchem",
     "nixexprpath": "release.nix",
     "schedulingshares": 100
