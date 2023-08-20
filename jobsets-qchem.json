@@ -34,7 +34,7 @@
       "qchem": {
         "emailresponsible": false,
         "type": "git",
-        "value": "https://github.com/markuskowa/NixOS-QChem master"
+        "value": "https://github.com/Nix-QChem/NixOS-QChem master"
       }
     },
     "keepnr": 5,
@@ -77,7 +77,7 @@
       "qchem": {
         "emailresponsible": false,
         "type": "git",
-        "value": "https://github.com/markuskowa/NixOS-QChem master"
+        "value": "https://github.com/Nix-QChem/NixOS-QChem master"
       }
     },
     "keepnr": 5,
@@ -120,7 +120,7 @@
       "qchem": {
         "emailresponsible": false,
         "type": "git",
-        "value": "https://github.com/markuskowa/NixOS-QChem release-22.11"
+        "value": "https://github.com/Nix-QChem/NixOS-QChem release-22.11"
       }
     },
     "keepnr": 2,
@@ -163,7 +163,7 @@
       "qchem": {
         "emailresponsible": false,
         "type": "git",
-        "value": "https://github.com/markuskowa/NixOS-QChem release-22.11"
+        "value": "https://github.com/Nix-QChem/NixOS-QChem release-22.11"
       }
     },
     "keepnr": 2,
@@ -206,7 +206,7 @@
       "qchem": {
         "emailresponsible": false,
         "type": "git",
-        "value": "https://github.com/markuskowa/NixOS-QChem release-23.05"
+        "value": "https://github.com/Nix-QChem/NixOS-QChem release-23.05"
       }
     },
     "keepnr": 2,
@@ -249,7 +249,7 @@
       "qchem": {
         "emailresponsible": false,
         "type": "git",
-        "value": "https://github.com/markuskowa/NixOS-QChem release-23.05"
+        "value": "https://github.com/Nix-QChem/NixOS-QChem release-23.05"
       }
     },
     "keepnr": 2,

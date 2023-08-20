@@ -36,7 +36,7 @@ let
     inputs = {
       qchem = {
         type = "git";
-        value  = "https://github.com/markuskowa/NixOS-QChem pull/${prNumber}/${ref}";
+        value  = "https://github.com/Nix-QChem/NixOS-QChem pull/${prNumber}/${ref}";
         emailresponsible = false;
       };
 
