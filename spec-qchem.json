@@ -11,6 +11,6 @@
     "keepnr": 1,
     "inputs": {
         "jobsets": { "type": "git", "value": "https://github.com/markuskowa/hydra-conf", "emailresponsible": false },
-        "nixpkgs": { "type": "git", "value": "https://github.com/NixOS/nixpkgs nixos-20.09", "emailresponsible": false }
+        "nixpkgs": { "type": "git", "value": "https://github.com/NixOS/nixpkgs nixos-24.05", "emailresponsible": false }
     }
 }
