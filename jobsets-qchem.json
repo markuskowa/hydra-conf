@@ -170,5 +170,91 @@
     "nixexprinput": "qchem",
     "nixexprpath": "release.nix",
     "schedulingshares": 100
+  },
+  "release-25.05": {
+    "checkinterval": 43200,
+    "description": "Build release-25.05",
+    "emailoverride": "",
+    "enabled": true,
+    "enableemail": false,
+    "hidden": false,
+    "inputs": {
+      "config": {
+        "emailresponsible": false,
+        "type": "nix",
+        "value": "{ optAVX = true; }"
+      },
+      "allowUnfree": {
+        "emailresponsible": false,
+        "type": "boolean",
+        "value": "false"
+      },
+      "pin": {
+        "emailresponsible": false,
+        "type": "boolean",
+        "value": "true"
+      },
+      "postOverlays": {
+	"type": "nix",
+	"value": "[(self: super: { qchem=super.qchem // { amd-scalapack = null; }; })]"
+      },
+      "nixpkgs": {
+        "emailresponsible": false,
+        "type": "git",
+        "value": "https://github.com/NixOS/nixpkgs nixos-25.05"
+      },
+      "qchem": {
+        "emailresponsible": false,
+        "type": "git",
+        "value": "https://github.com/Nix-QChem/NixOS-QChem release-25.05"
+      }
+    },
+    "keepnr": 2,
+    "nixexprinput": "qchem",
+    "nixexprpath": "release.nix",
+    "schedulingshares": 100
+  },
+  "release-25.05-noavx": {
+    "checkinterval": 172800,
+    "description": "Build release-25.05 (AVX optimizations disabled)",
+    "emailoverride": "",
+    "enabled": true,
+    "enableemail": false,
+    "hidden": false,
+    "inputs": {
+      "config": {
+        "emailresponsible": false,
+        "type": "nix",
+        "value": "{ optAVX = false; }"
+      },
+      "postOverlays": {
+	"type": "nix",
+	"value": "[(self: super: { qchem=super.qchem // { amd-scalapack = null; }; })]"
+      },
+      "allowUnfree": {
+        "emailresponsible": false,
+        "type": "boolean",
+        "value": "false"
+      },
+      "pin": {
+        "emailresponsible": false,
+        "type": "boolean",
+        "value": "true"
+      },
+      "nixpkgs": {
+        "emailresponsible": false,
+        "type": "git",
+        "value": "https://github.com/NixOS/nixpkgs nixos-25.05"
+      },
+      "qchem": {
+        "emailresponsible": false,
+        "type": "git",
+        "value": "https://github.com/Nix-QChem/NixOS-QChem release-25.05"
+      }
+    },
+    "keepnr": 2,
+    "nixexprinput": "qchem",
+    "nixexprpath": "release.nix",
+    "schedulingshares": 100
   }
 }
